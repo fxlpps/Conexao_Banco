@@ -100,6 +100,14 @@ namespace Conexao_Banco
             {
                 MessageBox.Show("Erro ao conectar ao banco", erro.Message);
             } 
+            finally { conexao.Close(); }
+            txtNome.Clear();
+            txtBairro.Clear();
+            txtCEP.Clear();
+            txtEmail.Clear();
+            txtNumero.Clear();
+            txtRua.Clear();
+            txtTelefone.Clear();
         }
 
         private void txtNumero_TextChanged(object sender, EventArgs e)

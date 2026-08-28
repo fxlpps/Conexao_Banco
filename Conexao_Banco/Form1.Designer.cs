@@ -45,6 +45,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // label1
@@ -282,6 +283,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.MaskedTextBox txtCEP;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
