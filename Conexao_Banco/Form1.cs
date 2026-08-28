@@ -29,7 +29,7 @@ namespace Conexao_Banco
 
             comando = new MySqlCommand("create database if not exists cadastro; use cadastro", conexao);
             comando.ExecuteNonQuery();
-            comando = new MySqlCommand("create table if not exists " + "funcuionario(codigo int(11) not null auto_increment, nome varchar(50) not null, rua varchar(50) not null, numero varchar(10) not null, bairro varchar(30) not null, cep varchar(10) not null, tel varchar(15) not null, email varchar(55) not null, primary key (codigo))", conexao, null);
+            comando = new MySqlCommand("create table if not exists " + "funcionario(codigo int(11) not null auto_increment, nome varchar(50) not null, rua varchar(50) not null, numero varchar(10) not null, bairro varchar(30) not null, cep varchar(10) not null, tel varchar(15) not null, email varchar(55) not null, primary key (codigo))", conexao, null);
             comando.ExecuteNonQuery();
             conexao.Close();
         }
@@ -86,17 +86,20 @@ namespace Conexao_Banco
                 conexao.Open();
                 try
                 {
-
+                    comando = new MySqlCommand(sql, conexao);
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Dados salvos com sucesso", "Atenção",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception erro)
                 {
-
+                    MessageBox.Show("Erro ao salvar dados", erro.Message);
                 }
             }
             catch (Exception erro)
             {
-
-            }
+                MessageBox.Show("Erro ao conectar ao banco", erro.Message);
+            } 
         }
 
         private void txtNumero_TextChanged(object sender, EventArgs e)
