@@ -99,7 +99,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.radioButton2.Location = new System.Drawing.Point(171, 158);
+            this.radioButton2.Location = new System.Drawing.Point(173, 158);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(87, 32);
             this.radioButton2.TabIndex = 4;
