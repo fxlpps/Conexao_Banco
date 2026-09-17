@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Conexao_Banco
+namespace banco_mysql
 {
     internal static class Program
     {

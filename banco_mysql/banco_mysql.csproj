@@ -1,13 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{22349886-0858-4B8F-B1D3-65E910756CC2}</ProjectGuid>
+    <ProjectGuid>{30C8B3FB-329C-4750-8AA9-0F3689A5FE4B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Conexao_Banco</RootNamespace>
-    <AssemblyName>Conexao_Banco</AssemblyName>
+    <RootNamespace>banco_mysql</RootNamespace>
+    <AssemblyName>banco_mysql</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

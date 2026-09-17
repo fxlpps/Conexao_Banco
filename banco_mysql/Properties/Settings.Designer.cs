@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Conexao_Banco.Properties
+namespace banco_mysql.Properties
 {
 
 
